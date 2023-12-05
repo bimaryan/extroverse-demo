@@ -6,14 +6,14 @@ class Admin {
   Admin(this.nama, this.alamat, this.email);
 
   String getNama() {
-    return nama;
+    return nama!;
   }
 
   String getAlamat() {
-    return alamat;
+    return alamat!;
   }
 
   String getEmail() {
-    return email;
+    return email!;
   }
 }

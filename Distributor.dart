@@ -1,23 +1,23 @@
 class Distributor {
-  int id;
-  String nama;
-  String email;
-  String alamat;
-  String phoneNumber;
+  int? _id;
+  String? _nama;
+  String? _email;
+  String? _alamat;
+  String? _phoneNumber;
 
-  Distributor(this.id, this.nama, this.email, this.alamat, this.phoneNumber);
+  Distributor(this._id, this._nama, this._email, this._alamat, this._phoneNumber);
 
   // Metode getter untuk mendapatkan nilai atribut
-  int get getId => id;
-  String get getNama => nama;
-  String get getEmail => email;
-  String get getAlamat => alamat;
-  String get getPhoneNumber => phoneNumber;
+  int get getId => _id!;
+  String get getNama => _nama!;
+  String get getEmail => _email!;
+  String get getAlamat => _alamat!;
+  String get getPhoneNumber => _phoneNumber!;
 
   // Metode setter untuk mengubah nilai atribut
-  set setId(int id) => this.id = id;
-  set setNama(String nama) => this.nama = nama;
-  set setEmail(String email) => this.email = email;
-  set setAlamat(String alamat) => this.alamat = alamat;
-  set setPhoneNumber(String phoneNumber) => this.phoneNumber = phoneNumber;
+  set setId(int id) => this._id = id;
+  set setNama(String nama) => this._nama = nama;
+  set setEmail(String email) => this._email = email;
+  set setAlamat(String alamat) => this._alamat = alamat;
+  set setPhoneNumber(String phoneNumber) => this._phoneNumber = phoneNumber;
 }
